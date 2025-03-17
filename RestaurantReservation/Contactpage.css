@@ -1,0 +1,175 @@
+/*Contact Us.CSS*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5; /* Light gray background */
+    color: #333;
+    line-height: 1.6;
+
+      /* Background image properties */
+    background-image: url("Resto.jpg"); /* REPLACE WITH YOUR ACTUAL IMAGE PATH */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    min-height: 100vh; 
+}
+header {
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+main{
+    padding: 4rem 2rem;
+}
+.contact-section {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact-container {
+    max-width: 1200px;
+    width: 100%;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.contact-container p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column; 
+    gap: 2rem;
+}
+
+.contact-details, .contact-form {
+    width: 100%; 
+}
+
+.contact-details h3, .contact-form h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.map-container {
+    margin-bottom: 1.5rem;
+}
+
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif; 
+    color: #333; 
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #8b2f2f; 
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #6a1f1f;
+}
+
+.contact-details p {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.contact-details strong {
+    color: #8b2f2f;
+    min-width: 80px;
+    display: inline-block;
+    margin-right: 1rem;
+}
+.back-btn {
+    background: #800000;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: inline-flex; 
+    align-items: center;
+    justify-content: center;
+    width: auto; 
+    white-space: nowrap; 
+    transition: background 0.3s;
+}
+
+.back-btn i {
+    margin-right: 5px;
+}
+
+.back-btn:hover {
+    background: #ffd700;
+    color: #800000;
+}
+
+@media (min-width: 768px) {
+    .contact-content {
+        flex-direction: row; 
+    }
+
+    .contact-details, .contact-form {
+        width: 50%; 
+    }
+}

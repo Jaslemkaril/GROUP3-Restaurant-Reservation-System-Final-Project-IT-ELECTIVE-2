@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url('480454863_1017036850267934_2057664506312018417_n.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
+
+form {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: rgba(22, 22, 22, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(110, 110, 110, 0.5); 
+    width: 400px; 
+    box-sizing: border-box;
+    border: 1px solid grey;
+    z-index: 100;
+}
+
+
+form input[type="text"],
+form input[type="datetime-local"],
+form textarea,
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type="number"]{
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type=submit]{
+    color: rgb(13, 13, 13);
+    background-color: rgb(227, 193, 0);
+    cursor: pointer;
+    transition: background-color 0.5s,
+     color 1s;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(252, 221, 46);
+}
+
+input[type="submit"]:active{
+    opacity: 0.5;    
+}
+
+form .name, .date-time, .guests, .notes{
+    font-weight: bold;
+    font-size: large;
+    color: White;
+}
+
+form h1{
+    text-align: center;
+    color: white;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+  .sidebar-container {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: rgba(48, 48, 48, 0.7);
+    transition: all .5s ease;
+    z-index: 101; /* Ensure sidebar is above form */
+}
+
+section {
+    background: url(bg.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all .5s;
+}
+
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top, 0.4s;
+    z-index: 110;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.back-btn {
+    background: #800000; /* Keeps the maroon color */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    white-space: nowrap;
+    transition: background 0.3s;
+    box-shadow: none; /* Removes any shadow effect */
+}
+
+.back-btn:hover {
+    background: #ffd700;
+    color: #800000;
+}

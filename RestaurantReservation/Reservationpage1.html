@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Reservationpage1.css">
+    <title>Reservation Page</title>
+</head>
+    <body>
+        <header>
+            <button class="back-btn" onclick="window.location.href='Homepage.html'">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </button>
+        </header>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="bars" id="btn"></i>
+            <i class="times" id="cancel"></i>
+        </label>
+        <section></section>
+        <form>
+            <label>
+                <h1>Reservation Form</h1>
+                <label class="name"><br>
+                    First name:<input type="text" name="first-name" placeholder="Enter your first name..." required>
+                    Last name:<input type="text" name="last-name" placeholder="Enter your last name..." required> <br>
+                </label>
+                <label class ="date-time">Reservation Date & Time: <br>
+                    <input type="datetime-local" name="date-reserve" required /> <br>
+                </label>
+                <label class="guests">Number of Guests:</label><br>
+                    <input type="number" id="guests" name="guests" min="1" value="1"><br><br>
+                <label class="notes">Special Notes: </label>
+                <br />
+                <textarea rows="4" cols="40" id="comments">
+                </textarea>
+                <br />
+                <input type="submit" onclick="openPopup()"value="Confirm Reservation">
+            </label>
+        </form>
+        <div class="popup" id="popup">
+            <h2>Thank you!</h2>
+            <p>You're successfully Reserve a spot</p>
+            <button type="button" onclick="closePopup()">DONE</button>
+        </div>
+        <script src="Reservationpage1.js"></script>
+    </body>
+</html>

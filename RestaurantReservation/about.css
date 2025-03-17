@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(web_bg.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    margin: 0;
+    color: gold;
+    font-size: 2.2em;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 15px;
+    font-size: 1.1em;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover, 
+nav ul li a.active {
+    background: gold;
+    color: black;
+    font-weight: bold;
+}
+
+/* About Content */
+.about-content {
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    color: gold;
+    border-bottom: 2px solid gold;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Chefs Section */
+.chefs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.chef-card {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.5);
+    width: 250px;
+}
+
+.chef-card img {
+    width: 100%;
+    border-radius: 50%;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid gold;
+}
+
+.chef-card h3 {
+    color: gold;
+    margin: 10px 0;
+}
+
+/* Testimonials Section */
+.testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.testimonial-card {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.5);
+    width: 300px;
+}
+
+.testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid gold;
+}
+
+.testimonial-card blockquote {
+    font-style: italic;
+    background: rgba(255, 215, 0, 0.1);
+    padding: 15px;
+    border-left: 5px solid gold;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.testimonial-card blockquote span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: gold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+    font-size: 1.2em;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.5);
+}
